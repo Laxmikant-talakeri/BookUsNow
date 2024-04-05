@@ -15,9 +15,9 @@ function Recommendation(){
 
     const [recommendedEvents, setRecommendedEvents] = useState(null);
     const [loading, setLoading] = useState(true);
-    const apiKey = import.meta.env.RECO_API_KEY;
+    
 
-    const API = `https://gg-backend-assignment.azurewebsites.net/api/Events?code=${apiKey}==&type=reco`;
+    const API = "https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&type=reco";
 
     async function fetchData(){
         setLoading(true);
