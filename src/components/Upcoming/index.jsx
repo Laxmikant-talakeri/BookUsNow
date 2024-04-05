@@ -16,7 +16,9 @@ function Upcoming(){
     // Accessing API key from environment variable
     const apiKey = import.meta.env.VITE_API_KEY;
 
-    const API = `https://gg-backend-assignment.azurewebsites.net/api/Events?code=${apiKey}==&page=${pageNum}&type=upcoming`;
+    
+    const API = `https://gg-backend-assignment.azurewebsites.net/api/Events?code=${apiKey}==&page=1&type=upcoming`;
+
     async function fetchNewData(){
         if (pageNum <= 4) {
             setPageNum(pageNum + 1);
