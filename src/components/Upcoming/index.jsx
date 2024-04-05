@@ -13,8 +13,10 @@ function Upcoming(){
     const [pageNum, setPageNum] = useState(1);
     const [hasMore, setHasMore] = useState(true);
 
-    const API = `https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&page=${pageNum}&type=upcoming`;
+    // Accessing API key from environment variable
+    const apiKey = import.meta.env.VITE_API_KEY;
 
+    const API = `https://gg-backend-assignment.azurewebsites.net/api/Events?code=${apiKey}==&page=${pageNum}&type=upcoming`;
     async function fetchNewData(){
         if (pageNum <= 4) {
             setPageNum(pageNum + 1);
@@ -78,8 +80,6 @@ function Upcoming(){
             </div>
         </div>
     );
-
-
 }
 
 export default Upcoming;
