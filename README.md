@@ -56,11 +56,11 @@ Ensure you have the necessary API key configured for fetching event data. Refer 
 ## Project Structure
 
 - **src/components**: Contains React components for different parts of the application.
-- **src/Loader**: Contains loader component for displaying loading state.
-- **src/Card**: Contains card component for displaying event information.
+- **src/Loader/index.jsx**: Contains loader component for displaying loading state.
+- **src/Card*/index.jsx*: Contains card component for displaying event information.
 - **src/index.css**: Stylesheet for global styles.
-- **src/Recommendation/index.css**: Stylesheet specific to the recommendation component.
-- **src/Upcoming/index.css**: Stylesheet specific to the upcoming component.
+- **src/Recommendation/index.jsx**: Stylesheet specific to the recommendation component.
+- **src/Upcoming/index.jsx**: Stylesheet specific to the upcoming component.
 
 
 
