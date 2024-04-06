@@ -14,10 +14,10 @@ function Upcoming(){
     const [hasMore, setHasMore] = useState(true);
 
     // Accessing API key from environment variable
-    const apiKey = import.meta.env.VITE_API_KEY;
+  
 
     
-    const API = `https://gg-backend-assignment.azurewebsites.net/api/Events?code=${apiKey}==&page=1&type=upcoming`;
+    const API = `https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&page=1&type=upcoming`;
 
     async function fetchNewData(){
         if (pageNum <= 4) {
